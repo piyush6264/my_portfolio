@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a71b725d8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Service</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+
+            <div class="hero">
+                <div class="row">
+                    <div class="profile-intro">
+                        <h3>Hello, I am</h3>
+                        <h1>Piyush<span>Paliwal</span></h1>
+                        <p> <br>I am a web developer, my expertise is to create and website design, graphic design, business cards and many more...
+                            </p>
+                        <div class="socials">
+
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/piyush-paliwal-43328121b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+            
+                        </div>
+                    </div>
+                    
+                    <div class="profile">
+                        <img src="images/piyush3.png" style="width:100%;">>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- --------about section--------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="zoom-in-up">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2" data-aos="fade-left">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>hello! I am a web developer and I am passionate about website designing and
+                        developing. I have honed my skills in Html, CSS, Javascript, Sql, Php etc.</p>
+                    <p> My journey in web development has been marked by Google Developer Student Club, Chandigarh
+                        University.</p>
+                    <p> My goal is to create and develop a website for clients that is easy to read and understand.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Project Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>Recently I have worked on bubble hit game, it is based on
+                                javascript language.</li>
+                            <li><span></span><br>Worked on a Real time weather monitoring app under Chandigarh
+                                University.</li>
+                            <li><span></span><br>Worked on a tic tac toe game designing.</li>
+                            <li><span></span><br>Worked on a business project as a team leader (A hotel website).</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-24</span><br>BCA from Chandigarh University.</li>
+                            <li><span></span><br>Certified by Duke University in Web Development Course (Coursera).</li>
+                            <li><span></span><br>Certified in IOT course from NPTEL.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  services ---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-left">My Services</h1>
+            <div class="services-list" data-aos="zoom-in-up">
+               <div onmouseover="changeColor1()">
+                    <i id="card1" class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus amet ipsa? </p>
+                    <a href="#">Learn more</a>
+               </div>
+                <div onmouseover="changeColor2()">
+                    <i id="card2" class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus amet ipsa? Sint iure
+                        voluptatem debitis aut rerum architecto corporis magni earum inventore suscipit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div onmouseover="changeColor3()">
+                    <i id="card3" class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas possimus amet ipsa? Sint iure
+                        voluptatem debitis aut rerum architecto corporis magni earum inventore suscipit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----Portfolio------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title" data-aos="fade-left">
+                <h5>My Work</h5><br>
+                <p>If you want to see the working of projects then click on images.</p>
+            </div>
+            <div class="work-list" data-aos="zoom-in">
+                <div class="work">
+                    <img src="images/weather1.png">
+                    <div class="layer">
+                        <h3>Real Time Weather Monitoring App</h3>
+                        <p>click on the circle to see the project working.</p>
+                        <a href="https://piyush6264.github.io/weather_app/" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/tic.png">
+                    <div class="layer">
+                        <h3>Tic tac toe game App</h3>
+                        <p>click on the circle to play tic tac toe game.</p>
+                        <a href="https://piyush6264.github.io/tic-tac-toegame.com/" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (14).png">
+                    <div class="layer">
+                        <h3>Bubble Hit Game App</h3>
+                        <p>Click on the the circle to play the bubble hit game</p>
+                        <a href="https://piyush6264.github.io/Bubble-game/" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact section start here -->
+
+    <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="zoom-in-up">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>piyush08paliwal@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>9982538674</p>
+
+                <div class="social-icons">
+                    <a href="https://facbook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv (2).pdf" target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit " class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <div class="copyright">
+        <p>Copyright © 2023 | All rights reserved | Designed By- Piyush Paliwal</p>
+    </div> -->
+    </div>
+
+    
+    <footer>
+        <div class="footer">
+        <div class="footer-row">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        
+        <div class="footer-row">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">My Services</a></li>
+        <li><a href="#portfolio">My Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        
+        </ul>
+        </div>
+        
+        <div class="footer-row">
+        Developer Copyright © 2023 Developer - All rights reserved || Designed By: Piyush Paliwal 
+        </div>
+        </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
